@@ -1,0 +1,387 @@
+.canvas {
+  position: relative;
+  z-index: 1;
+}
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 20px;
+  //background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.welcome svg {
+
+  display: block;
+  font: 4.5em 'Montserrat';
+  width: 980px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 10% 20%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0;
+  animation: stroke-offset 5.7s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #2185C5;
+  animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+.EnterButton{
+    position: fixed;
+    bottom: -50px;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.EnterButton svg {
+    font: 15.5em 'Montserrat';
+    width: 230px;
+    height: 365px;
+}
+.CentralPageButton {
+    position: fixed;
+    bottom: -50px;
+    right: 60px;
+    z-index: 2;
+    cursor: pointer;
+}
+.CentralPageButton svg {
+    font: 10.5em 'Montserrat';
+    width: 230px;
+    height: 365px;
+}
+.cen-text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 10% 20%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0;
+    animation: stroke-offset 5.7s infinite linear;
+}
+
+.cen-text-copy:nth-child(1){
+    stroke: #6F5B3E;
+    animation-delay: -1s;
+}
+
+.cen-text-copy:nth-child(2){
+    stroke: #C4AE78;
+    animation-delay: -2s;
+}
+
+.cen-text-copy:nth-child(3){
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.cen-text-copy:nth-child(4){
+    stroke: #171515;
+    animation-delay: -4s;
+}
+
+.cen-text-copy:nth-child(5){
+    stroke: #BD8E83;
+    animation-delay: -5s;
+}
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+.NavBar :is(.et-hero-tabs, .et-slide) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;}
+
+.et-hero-tabs, .et-slide h1 {
+    font-size: 14rem;
+    margin: 0;
+    letter-spacing: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-hero-tabs, .et-slide h3 {
+    font-size: 12rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-hero-tabs, .et-slide h5 {
+    font-size: 12rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+
+
+.NavBar :is(.et-hero-tabs-container) {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;}
+
+
+     .et-hero-tabs-container .--top {
+      position: fixed;
+      top: 0;
+}
+
+
+
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+}
+  .et-hero-tab:hover {
+   color:white;
+   background: rgba(102,177,241,0.8);
+   transition: all 0.5s ease;
+ }
+
+
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #66B1F1;
+  transition: left 0.3s ease;
+}
+@media (min-width: 800px) {
+
+    .et-hero-tabs,  .et-slide h1 {
+    font-size: 3rem;
+  }
+
+    .et-hero-tabs, .et-slide h3 {
+    font-size: 1rem;
+  }
+
+    .et-hero-tabs,  .et-slide h5 {
+    font-size: 1rem;
+  }
+}
+
+  .et-hero-tab {
+    font-size: 1rem;
+  }
+
+.animate-character
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+            -225deg,
+            #6F5B3E 0%,
+            #C4AE78 29%,
+            #171515 67%,
+            #BD8E83 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 115px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.resume section {
+    background-color: #F9F6F0;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #6F5b3E;
+}
+
+.portfolio line-portfolio {
+    background-color: rgba(0, 0, 0, 0.54);
+}
+.portfolio-animate-character
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+            -225deg,
+            #2185C5 0%,
+            #7ECEFD 29%,
+            #FFF6E5 67%,
+            #FF7F66 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 115px;
+}
+
+.ComingSoon * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+.ComingSoon body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    transform-style: preserve-3d;
+    font-family: 'Black Han Sans', sans-serif;
+
+}
+
+.ComingSoon body:after {
+    content: "";
+    background: url('https://i0.wp.com/texturefabrik.com/wp-content/uploads/2020/09/texturefabrik-photocopy_5_06.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    mix-blend-mode: screen;
+    opacity: 0.4;
+}
+
+
+.coming-soon-circle {
+    transform-style: preserve-3d;
+    animation: animate 8s linear infinite;
+    --deg: calc(360deg / var(--numchs));
+    z-index: 1
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
+    }
+}
+
+.coming-soon-circle .char {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #2185C5;
+    font-size: 4em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--char-index) * var(--deg))) translateZ(250px);
+    font-family: 'Black Han Sans', sans-serif;
+
+}
+
+.coming-soon-globe {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    z-index: 0;
+    filter: grayscale(1);
+
+}
