@@ -15,7 +15,7 @@ const Portfolio = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        border: "4px solid #FF7F66 ",
+        border: "4px solid #2185C5 ",
         transition: "border 0.3s ease-in-out",
 
         outline: "none",
