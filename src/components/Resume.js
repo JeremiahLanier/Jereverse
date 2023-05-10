@@ -12,8 +12,8 @@ const Resume = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
+        justifyContent: "left",
+        textAlign: "left",
         border: "4px solid #2185C5",
         transition: "border 0.3s ease-in-out",
 
